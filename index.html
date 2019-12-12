@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cloud Accelerator by Telkom Indonesia</title>
+    <link rel="stylesheet" href="assets/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="uk-container uk-container-expand uk-padding-remove">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <!-- NAVBAR -->
+            <nav class="uk-navbar uk-visible@m navbar" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="#" class="uk-navbar-item uk-logo uk-margin-medium-left" uk-scroll="duration:1000;">
+                        <img src="assets/img/logo.png" alt="" width="80">
+                    </a>
+                    <ul class="uk-navbar-nav menu">
+                        <li class="uk-margin-large-left">
+                            <a href="#partner" class="uk-text-capitalize" uk-scroll="duration:1000; offset:50;">
+                                <span>Partners</span>
+                            </a>
+                        </li>
+
+                        <li class="uk-margin-medium-left">
+                            <a href="#product" class="uk-text-capitalize" uk-scroll="duration:1000; offset:50;">
+                                <span>Product</span>
+                            </a>
+                        </li>
+
+                        <li class="uk-margin-medium-left">
+                            <a href="#benefits" class="uk-text-capitalize" uk-scroll="duration:1000; offset:50;">
+                                <span>Benefits</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav nav-auth">
+                        <li>
+                            <a href="" class="uk-text-capitalize" uk-toggle="target: #offcanvas-login">
+                                <span>Login</span>
+                            </a>
+                        </li>
+                        <li class="uk-margin-medium-right">
+                            <a href="" class="uk-text-capitalize" uk-toggle="target: #offcanvas-register">
+                                <span>Register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Navbar Mobile -->
+            <nav class="uk-navbar navbar uk-hidden@m" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="#" class="uk-navbar-item uk-logo uk-margin-left" uk-scroll="duration:1000;">
+                        <img src="assets/img/logo.png" alt="" width="80">
+                    </a>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle uk-margin-right" uk-navbar-toggle-icon href="" uk-toggle="target: #offcanvas-login" style="color: #FFFFFF;"></a>
+                </div>
+
+            </nav>
+            <!-- End of navbar mobile -->
+        </div>
+        <!-- END OF NAVBAR -->
+    </div> 
+        <!-- OFFCANVAS LOGIN -->
+        <div id="offcanvas-login" uk-offcanvas="flip: false;" class="uk-offcanvas uk-open">
+            <div class="uk-offcanvas-bar uk-padding-remove-top uk-padding-large" >
+
+                <nav class="uk-navbar-container nav-offCanvas uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav menu-offcanvas">
+                            <li>
+                                <a href="" class="uk-text-capitalize"  uk-toggle="target: #offcanvas-register">
+                                    <span>Register</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="uk-text-capitalize">
+                                    <span>En</span>
+                                </a>
+                                <div uk-dropdown="delay-hide:0; offset:-20;">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#" style="font-size:1.2rem;">Bahasa Indonesia</a></li>
+                                        <li><a href="#" style="font-size:1.2rem;">English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <h2 class="uk-margin-top uk-margin-remove-bottom"><strong>Login</strong></h2>
+                <small class="uk-margin-remove-top">or <a href="" uk-toggle="target: #offcanvas-register">Create
+                        Account</a></small>
+
+                <form action="" class="uk-margin-medium-top">
+                    <fieldset class="uk-fieldset">
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Username" id="username-text" style="border-radius: 12px; border-color: #707070; color: #707070;">
+                        </div>
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Password" id="password-text" style="border-radius: 12px; border-color: #707070; color: #707070;">
+                        </div>
+                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid" style="color:#707070">
+                            <label><input class="uk-checkbox" type="checkbox" id="remember-check" style="border-color:#E61D7A;"> Remember me</label>
+                        </div>
+                        <div class="uk-margin">
+                            <button class="uk-button uk-button-default uk-width-1-1" style="background-color: #E61D7A; border-radius: 12px;">Login</button>
+                        </div>
+                        <div class="uk-margin">
+                            <a href="#benefits" style="color:#E61D7A; text-decoration: none;">Forgot password</a>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- END OF OFFCANVAS LOGIN -->
+
+        <!-- OFFCANVAS REGISTER -->
+
+        <div id="offcanvas-register" uk-offcanvas="flip: false; overlay: true">
+            <div class="uk-offcanvas-bar uk-padding-remove-top uk-padding-large" style="width: 450px;">
+
+                <h2 class="uk-margin-top uk-margin-remove-bottom"><strong>Register</strong></h2>
+                <small class="uk-margin-remove-top">or <a href="" uk-toggle="target: #offcanvas-login">Login to your
+                        account</a></small>
+
+                <form action="" class="uk-margin-medium-top">
+                    <fieldset class="uk-fieldset">
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Name">
+                        </div>
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Phone Number">
+                        </div>
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Email">
+                        </div>
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Password">
+                        </div>
+                        <div class="uk-margin">
+                            <input type="text" class="uk-input" placeholder="Confirm Password">
+                        </div>
+                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                            <label><input class="uk-checkbox" type="checkbox"> I have read and agree to Term and
+                                Condition</label>
+                        </div>
+                        <div class="uk-margin">
+                            <button class="uk-button uk-button-default uk-width-1-1">Register</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- END OF OFFCANVAS REGISTER -->
+
+        <!-- SLIDESHOW -->
+
+        <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow"
+            uk-slideshow="animation: fade; min-height: 500; max-height: 585; autoplay: true; autoplay-interval: 5000"
+            id="main-slideshow">
+
+            <ul class="uk-slideshow-items" style="height: 500px;">
+                <li class="" style="background-color: #F2F2F2;">
+                    <img src="#" class="uk-visible@m uk-cover" alt uk-cover style="width: 1441px; height: 500px;">
+                    <img src="https://loket-production-sg.s3.ap-southeast-1.amazonaws.com/images/ss/1575377598_JiMm0E.jpg"
+                        class="uk-hidden@m uk-cover" alt uk-cover>
+
+                    <div class="uk-position-cover background-mobile uk-hidden@m"></div>
+
+                    <div class="uk-container uk-margin-large-top container-slide">
+                        <div class="uk-width-1-1">
+                            <div class="uk-width-1-1 uk-width-1-2@m">
+                                <div class="uk-grid uk-grid-stack" uk-grid="">
+                                    <div class="uk-width-1-1 uk-margin-medium-top uk-text-center uk-text-left@m uk-first-column"
+                                        style="z-index: 99;">
+                                        <h3 style="color: #0E2B5E; font-size: 45px;"><strong>Cloud Accelerator (CloudA) is a Cloud Computing technology ecosystem</strong> </h3>
+                                        <p class="uk-margin-top-large" style="color:#0E2B5E; font-size: 18px;">With the Home of Cloud Accelerator slogan, enjoy our the best services that suit your needs, with various packages as massive as market expansion collaboration. </p>
+                                        <p style="color:#0E2B5E; font-size: 18px;" class="uk-margin-small-bottom">Our best offer</p>
+                                        <a href="#" class="uk-button uk-button-primary uk-text-capitalize" style="background-color: #F7B22F; color: #FFFFFF; border-radius: 20px;;"><strong>Free trial!</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+
+        <!-- END OF SLIDESHOW -->
+
+        <!-- PARTNER -->
+        <div class="uk-section uk-padding-large partner" id="partner">
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">Partner</div>
+                </div>
+            </div>
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-1@s uk-text-center" uk-grid>
+                <div style="font-size: 1.4rem;">
+                    <p class="uk-margin-remove-bottom"><strong>CloudA customers are partners that always be our priority.</strong> As a Cloud Accelerator,</p>
+                    <p class="uk-margin-remove-top">we’ll try our best to maximize the acceleration to synergize and fasten the growth of your business.</p>
+                </div>
+            </div>
+        </div>
+        <!-- END OF PARTNER -->
+
+        <!-- PRODUCT -->
+        <div class="uk-section uk-padding-large product" id="product">
+            <div class="uk-grid-row uk-text-center uk-child-width-1-1" uk-grid>
+                <div>
+                    <h2>CloudA as Home of Cloud Accelerator</h2>
+                    <p>With Cloud Accelerator, companies can focus more on business development effectively</p>
+                </div>
+            </div>
+
+            <div class="uk-grid-column uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
+                <div>
+                    <img src="assets/img/product/flexible.png" alt="">
+                    <h3>FLEXIBLE</h3>
+                    <p>Flexibility is one of the reliability that we provide. Cloud Accelerator can be accessed anytime and anywhere to support the effectiveness of Company's development.</p>
+                </div>
+                <div>
+                    <img src="assets/img/product/price.png" alt="">
+                    <h3>COMPETITIVE PRICE</h3>
+                    <p>CloudA is able to provide upscale Enterprise Class service for Small Medium Business with more efficient cost.</p>
+                </div>
+                <div>
+                    <img src="assets/img/product/support.png" alt="">
+                    <h3>SUPPORT 24X7</h3>
+                    <p>Cloud Accelerator is managed by dedicated IT Professional Team whose task is to monitor the system and data networks in 24/7, to maintain the security and convenience of CloudA Partners.</p>
+                </div>
+                <div>
+                    <img src="assets/img/product/trusted.png" alt="">
+                    <h3>TRUSTED</h3>
+                    <p>To maintain the trust of CloudA’s partners, Services on Cloud Accelerator uses IT Technology with standard & International certification and supported by Proffesional IT Team.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- END OF PRODUCT -->
+
+        <!-- FEATURED -->
+        <div class="uk-section uk-padding-medium featured" id="featured">
+            <div class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center" uk-grid>
+                <div class="uk-flex-first">
+                    <h2>Featured Product</h2>
+                    <p>Cloud Accelerator provides a variety of the best cloud services that are capable to provide effectiveness, efficiency, to accelerate company productivity.</p>
+                </div> 
+            </div>
+            <div class="uk-grid-large uk-child-width-1-1 uk-text-center uk-padding-large uk-padding-remove-top uk-padding-remove-bottom" uk-grid>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- END OF FEATURED -->
+
+        <!-- BENEFITS -->
+        <div class="uk-section uk-padding-large benefits" id="benefits">
+            <div class="uk-container">
+
+            </div>
+            <div class="uk-grid-small uk-width-3-4" uk-grid>
+                <div>
+                    <h2>Benefits of CloudA</h2>
+                    <p>Cloud Accelerator supports Company’s IT service needs with variety of superior Cloud-based products. The advantages of Cloud Accelerator includes Load Balancer feature, Bulit In Dashboard Console, ease of provisioning, and price patrol to ensures CloudA offers will remain competitive. Cloud Accelerator is also supported by Tier 4 Data Centers.</p>
+                </div> 
+            </div>
+
+            <div class="uk-child-width-1-2@s" uk-grid>
+                <div>
+                    <div uk-grid>
+                        <div class="uk-width-3-4@m uk-text-left">
+                            <ul class="uk-tab-right" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                <li>
+                                    <a href="#" class="uk-text-left uk-margin-left">
+                                        <h2>Simple</h2>
+                                        <p class="uk-text-capitalize">The Cloud Accelerator services can be accessed easily by CloudA Partners without any space and time restrictions on space and time using an internet connection only.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-text-left uk-margin-left">
+                                        <h2>Wide Network</h2>
+                                        <p class="uk-text-capitalize">
+                                            With the support of Data Centers spread across three points in Indonesia, Cloud Accelerator has a network that can be accessed from all over Indonesia and abroad.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-text-left uk-margin-left">
+                                        <h2>Monitored</h2>
+                                        <p class="uk-text-capitalize">
+                                            Cloud Accelerator has a server centered in Indonesia, a system which running can be controlled easily by CloudA partners.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="uk-text-left uk-margin-left">
+                                        <h2>Secure</h2>
+                                        <p class="uk-text-capitalize">
+                                            Cloud Accelerator guarantees CloudA Partner's information, network, and company data security with the support of a professional IT team and a secure Data Center infrastructure environment. The existence of three Telkomsigma Data Centers, strengthens the security support of Cloud Accelerator in terms of Back-up as a Service & Disaster Recovery as a Service.
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div uk-grid>
+                        <div class="uk-width-expand@m">
+                            <ul id="component-tab-left" class="uk-switcher">
+                                <li>
+                                    <img src="assets/img/benefits/1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/img/benefits/2.png" alt=""  style="z-index: 980;" uk-sticky="top: 50; bottom: #animation; offset:100;">
+                                </li>
+                                <li>
+                                    <img src="assets/img/benefits/3.png" alt=""  style="z-index: 980;" uk-sticky="top: 50; bottom: #animation; offset:100;">
+                                </li>
+                                <li>
+                                    <img src="assets/img/benefits/1.png" alt=""  style="z-index: 980;" uk-sticky="top: 50; bottom: #animation; offset:100; top:#container-1;">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF BENEFITS -->
+
+        <!-- TESTIMONIALS -->
+        <div class="uk-section uk-padding-large testimonials" id="testimonials">
+            <div class="uk-container">
+                <div class="uk-grid-row-large uk-grid-column uk-child-width-1-4@m" uk-grid>
+                    <div>
+                        <small class="uk-padding-remove-bottom">T E S T I M O N I A L S</small>
+                        <h2 class="uk-margin-remove-top"><strong>What they said</strong></h2>
+                        <p>Cloud Accelerator has a server centered in Indonesia, a system which running can be controlled easily by CloudA partners.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- END OF TESTIMONIALS -->
+
+</body>
+
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/uikit-icons.min.js"></script>
+
+</html>

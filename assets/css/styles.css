@@ -1,0 +1,67 @@
+/* NAVBAR */
+.navbar {
+    background-color: #18165B;
+}
+.menu-nav>li>a{
+    font-size: 20px;
+}
+.burger-menu a {
+    color: #FFFFFF;
+}
+
+/* NAVBAR OFFCANVAS */
+.navbar-offcanvas {
+    background-color: #FFFFFF;
+}
+
+.offcanvas-nav>li>a{
+    color: #18165B;
+}
+
+/* OFFCANVAS */
+.offcanvas {
+    background-color: #FFFFFF;
+}
+
+/* FORM AUTHENTICATION */
+.form-auth h1, p{
+    color: #18165B;
+}
+.form-auth a {
+    color: #E61D7A;
+}
+
+#form-input {
+    border-color: #707070;
+    color: #707070;
+    border-radius: 12px;
+}
+#form-input::placeholder {
+    color: #707070;
+}
+
+/* Button Auth */
+#btn-auth {
+    background-color: #E61D7A;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+/* Checkbox auth*/
+.label-checkbox {
+    color: #707070;
+    font-size: 15px;
+}
+#checkbox-auth {
+    border:1.4px solid #E61D7A;
+}
+#checkbox-auth:checked {
+    background-color: #E61D7A;
+}
+
+/* Button Header */
+.header button {
+    background-color: #F7B22F;
+    color: #FFFFFF; 
+    border-radius: 20px;
+}
